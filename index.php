@@ -10,9 +10,6 @@ if(!empty($getUser)) {
 	$query   = "select * from users where username = '" . $getUser . "'";
 	$results = getSelect($query);
 }
-
-echo $query . "<br>";
-
 if(!$results) {
     echo "Unable to find users: " . $_GET["username"];
 }
